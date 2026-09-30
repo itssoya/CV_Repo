@@ -15,6 +15,9 @@
     <header>
       <h1>Sourav Yadav</h1>
       <p>Full-Stack Developer</p>
+      <form action="Sourav_Yadav_CV.pdf" method="get">
+        <button type="submit">Download CV</button>
+      </form>
     </header>
 
     <main>
@@ -66,18 +69,19 @@
       </section>
 
       <!-------------------------Education Section--------------------------------->
-      <section>
+      <section id="education">
         <h2>EDUCATION</h2>
         <hr />
+        <dl>
+          <dt><b>BSc (Hons) Computing</b></dt>
+          <dd>Islington College | London Metropolitan University, Kathmandu</dd>
 
-        <h3>BSc (Hons) Computing</h3>
-        <p>Islington College | London Metropolitan University, Kathmandu</p>
+          <dt><b>SLC</b></dt>
+          <dd>Golden Gate International Secondary School | NEB, Kathmandu</dd>
 
-        <h3>SLC</h3>
-        <p>Golden Gate International Secondary School | NEB, Kathmandu</p>
-
-        <h3>SEE</h3>
-        <p>Loyalty Academy | NEB, Budhanilkantha, Kathmandu</p>
+          <dt><b>SEE</b></dt>
+          <dd>Loyalty Academy | NEB, Budhanilkantha, Kathmandu</dd>
+        </dl>
       </section>
 
       <section>
@@ -96,7 +100,7 @@
       </section>
 
       <!-------------- Skills Section ----------->
-      <section>
+      <section id="skills">
         <h2>SKILLS</h2>
         <hr />
 
@@ -146,7 +150,7 @@
 
       <!--------- Projects --------------->
 
-      <section>
+      <section id="project">
         <h2>PROJECTS</h2>
         <hr />
 
@@ -156,7 +160,7 @@
 
           <div class="personal-projects">
             <h4>
-              <a href="https://github.com/itssoya/Study-Mate"
+              <a href="https://github.com/itssoya/Study-Mate" target="_blank"
                 >StudyMate — AI-Powered MERN Study Companion</a
               >
             </h4>
@@ -186,7 +190,9 @@
 
           <div class="personal-projects">
             <h4>
-              <a href="https://github.com/itssoya/DevOps_Project"
+              <a
+                href="https://github.com/itssoya/DevOps_Project"
+                target="_blank"
                 >DevOps CI/CD Status Monitor</a
               >
             </h4>
@@ -223,7 +229,9 @@
 
           <div class="academic-projects">
             <h4>
-              <a href="https://github.com/itssoya/Cafe-Management-System"
+              <a
+                href="https://github.com/itssoya/Cafe-Management-System"
+                target="_blank"
                 >Full-Stack Cafe Management System
               </a>
             </h4>
@@ -253,6 +261,7 @@
             <h4>
               <a
                 href="https://github.com/itssoya/Attack-analysis-on-CICIDS-2017"
+                target="_blank"
               >
                 Network Traffic Analysis — CICIDS 2017
               </a>
@@ -282,7 +291,7 @@
       </section>
 
       <!-------------------- Certifications Section -------------->
-      <section>
+      <section id="certifications">
         <h2>CERTIFICATIONS</h2>
         <hr />
 
@@ -322,4 +331,43 @@
       </section>
     </main>
   </body>
+  <footer>
+    <h2 id="contact-form">Get In Touch</h2>
+    <hr />
+    <form action="index.html">
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="myMail@example.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write Your Msg"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </footer>
 </html>
